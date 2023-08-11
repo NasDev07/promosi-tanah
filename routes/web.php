@@ -3,11 +3,11 @@
 // User
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\HomeController;
 
 // Admin
 use App\Http\Controllers\UserController as adminUserController;
 use App\Http\Controllers\DashboardPostController as adminDashboardPostController;
-use App\Http\Controllers\UserHomeConterller;
 
 // untuk client / umum port berita
 Route::get('/', function () {
@@ -15,8 +15,8 @@ Route::get('/', function () {
 });
 
 // untuk client / User
-Route::get('/blog', UserHomeConterller::class, 'blog')->name('blog');
-Route::get('/sigle-blog', UserHomeConterller::class, 'sigleblog')->name('sigle-blog');
+Route::get('/blog', [HomeController::class, 'artikel'])->name('blog');
+Route::get('/sigle-blog', [HomeController::class, 'SigleBlog'])->name('sigle-blog');
 
 // perbaikan dari Nas untuk user
 // dashboard

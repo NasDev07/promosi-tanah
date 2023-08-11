@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Promosi @yield('title')</title>
+    <title>Promosi | @yield('title')</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -28,6 +28,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets_user/css/style.css" rel="stylesheet">
+    @vite([])
 </head>
 
 <body>
@@ -63,7 +64,8 @@
                         </ul>
                     </li>
                     <li><a href="services.html">Promosi Tanah Anda</a></li>
-                    <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-right"></i></a>
+                    <li class="dropdown"><a href="#"><span>Layanan</span> <i
+                        class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="{{ url('blog') }}">Artikel</a></li>                            
                             <li><a href="#">Galeri</a></li>                            
@@ -96,6 +98,7 @@
 
 
     @yield('content')
+    
 
     <!-- ======= Footer ======= -->
     <footer id="footer">

@@ -12,7 +12,7 @@
                                     Welcome to Started Application
                                 </p>
 
-                                <a href="javascript:;" class="btn btn-sm btn-outline-primary">View
+                                <a href="{{ url('/') }}" class="btn btn-sm btn-outline-primary">View
                                     Badges</a>
                             </div>
                         </div>

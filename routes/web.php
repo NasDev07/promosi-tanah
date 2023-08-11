@@ -17,7 +17,7 @@ use App\Http\Controllers\UserController as adminUserController;
 
 // untuk client / umum port berita
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 // perbaikan dari Nas untuk user

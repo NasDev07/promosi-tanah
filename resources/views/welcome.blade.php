@@ -19,15 +19,16 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="assets_user/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets_user/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets_user/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets_user/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets_user/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets_user/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="{{ asset('assets_user/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets_user/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets_user/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets_user/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets_user/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets_user/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets_user/css/style.css" rel="stylesheet">
+    <link href="{{ asset('assets_user/css/style.css') }}" rel="stylesheet">
+    @vite([])
 </head>
 
 <body>
@@ -44,8 +45,8 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+                    <li><a class="active" href="index.html">Beranda</a></li>
+                    <li class="dropdown"><a href="#"><span>Tentang Kami</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="about.html">About</a></li>
                             <li><a href="team.html">Team</a></li>
@@ -61,10 +62,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="services.html">Promosi Tanah Anda</a></li>
+                    <li><a href="pricing.html">Layanan</a></li>
                     <li><a href="contact.html">Contact</a></li>
 
                     <li><a class="getstarted" href="about.html">Get Started</a></li>
@@ -85,17 +84,15 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-info">
-                        <h3>Serenity</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                            valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet
-                            proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                        <h3>GEDUNG KAMI</h3>
+                        <p>Komplek Pusat Pemerintahan Aceh Timur, Jl. Medan Banda Aceh, Km. 370, Seuneubok Teungoh PP, Idi Rayeuk, Kode Pos 24442</p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Beranda</a></li>
+                            <li><a href="#">Tentang Kami</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Terms of service</a></li>
                             <li><a href="#">Privacy policy</a></li>
@@ -103,11 +100,10 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h4>Contact Us</h4>
+                        <h4>HUBUNGI KAMI</h4>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br>
+                        Komplek Pusat Pemerintahan Aceh Timur, Jl. Medan Banda Aceh, Km. 370, Seuneubok Teungoh PP, Idi Rayeuk, Kode Pos 24442
+                        <br><br>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
                             <strong>Email:</strong> info@example.com<br>
                         </p>
@@ -153,14 +149,14 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets_user/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets_user/vendor/aos/aos.js"></script>
-    <script src="assets_user/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets_user/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets_user/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets_user/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets_user/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets_user/vendor/php-email-form/validate.js"></script>
+    <script src="{{ asset('assets_user/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('assets_user/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('assets_user/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets_user/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('assets_user/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets_user/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets_user/vendor/waypoints/noframework.waypoints.js') }}"></script>
+    <script src="{{ asset('assets_user/vendor/php-email-form/validate.js') }}"></script>
 
     <!-- Template Main JS File -->
     <script src="assets_user/js/main.js"></script>

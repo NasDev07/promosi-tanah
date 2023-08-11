@@ -45,7 +45,8 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="active" href="index.html">Beranda</a></li>
-                    <li class="dropdown"><a href="#"><span>Tentang Kami</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#"><span>Tentang Kami</span> <i
+                                class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="about.html">About</a></li>
                             <li><a href="team.html">Team</a></li>
@@ -62,7 +63,12 @@
                         </ul>
                     </li>
                     <li><a href="services.html">Promosi Tanah Anda</a></li>
-                    <li><a href="pricing.html">Layanan</a></li>
+                    <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                            <li><a href="{{ url('blog') }}">Artikel</a></li>                            
+                            <li><a href="#">Galeri</a></li>                            
+                        </ul>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
 
                     <li>
@@ -99,7 +105,8 @@
 
                     <div class="col-lg-3 col-md-6 footer-info">
                         <h3>GEDUNG KAMI</h3>
-                        <p>Komplek Pusat Pemerintahan Aceh Timur, Jl. Medan Banda Aceh, Km. 370, Seuneubok Teungoh PP, Idi Rayeuk, Kode Pos 24442</p>
+                        <p>Komplek Pusat Pemerintahan Aceh Timur, Jl. Medan Banda Aceh, Km. 370, Seuneubok Teungoh PP,
+                            Idi Rayeuk, Kode Pos 24442</p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
@@ -116,8 +123,9 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>HUBUNGI KAMI</h4>
                         <p>
-                        Komplek Pusat Pemerintahan Aceh Timur, Jl. Medan Banda Aceh, Km. 370, Seuneubok Teungoh PP, Idi Rayeuk, Kode Pos 24442
-                        <br><br>
+                            Komplek Pusat Pemerintahan Aceh Timur, Jl. Medan Banda Aceh, Km. 370, Seuneubok Teungoh PP,
+                            Idi Rayeuk, Kode Pos 24442
+                            <br><br>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
                             <strong>Email:</strong> info@example.com<br>
                         </p>

@@ -1,24 +1,22 @@
 <?php
 
+// User
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\UserController as adminUserController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+// Admin
+use App\Http\Controllers\UserController as adminUserController;
+use App\Http\Controllers\DashboardPostController as adminDashboardPostController;
+use App\Http\Controllers\UserHomeConterller;
 
 // untuk client / umum port berita
 Route::get('/', function () {
     return view('home');
 });
+
+// untuk client / User
+Route::get('/blog', UserHomeConterller::class, 'blog')->name('blog');
+Route::get('/sigle-blog', UserHomeConterller::class, 'sigleblog')->name('sigle-blog');
 
 // perbaikan dari Nas untuk user
 // dashboard
@@ -38,6 +36,7 @@ Route::middleware('auth')->group(function () {
 // dashboard
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::resource('users', adminUserController::class);
+    Route::resource('posts', adminDashboardPostController::class);
 });
 
 require __DIR__ . '/auth.php';

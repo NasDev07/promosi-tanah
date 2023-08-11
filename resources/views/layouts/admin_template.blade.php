@@ -43,6 +43,11 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="{{ asset('/assets/js/config.js') }}"></script>
+    {{-- trix --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/trix.css') }}">
+    <script type="text/javascript" src="{{ asset('/assets/js/trix.js') }}"></script>
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     @vite([])
 </head>
 
@@ -128,6 +133,12 @@
                             <a href="{{ route('users.index') }}" class="menu-link">
                                 <i class="menu-icon tf-icons bx bx-user-circle"></i>
                                 <div data-i18n="Account Settings">Users</div>
+                            </a>
+                        </li>
+                        <li class="menu-item @if (isset($menuPosts)) {{ $menuPosts }} @endif">
+                            <a href="{{ route('posts.index') }}" class="menu-link">
+                                <i class="menu-icon tf-icons bx bx-user-circle"></i>
+                                <div data-i18n="Account Settings">Artikel</div>
                             </a>
                         </li>
                     @endif

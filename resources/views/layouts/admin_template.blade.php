@@ -122,7 +122,7 @@
                     {{-- @can('admin') --}}
                     @if (Auth::user()->is_admin == 1)
                         <li class="menu-header small text-uppercase">
-                            <span class="menu-header-text">Pages</span>
+                            <span class="menu-header-text">Pages Admin</span>
                         </li>
                         <li class="menu-item @if (isset($menuUsers)) {{ $menuUsers }} @endif">
                             <a href="{{ route('users.index') }}" class="menu-link">
@@ -132,10 +132,13 @@
                         </li>
                     @endif
                     {{-- @endcan --}}
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Pages User</span>
+                    </li>
                     <li class="menu-item">
                         <a href="#" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-user-circle"></i>
-                            <div data-i18n="Account Settings">Post</div>
+                            <div data-i18n="Account Settings">Accon</div>
                         </a>
                     </li>
                 </ul>

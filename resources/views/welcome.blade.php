@@ -27,8 +27,7 @@
     <link href="{{ asset('assets_user/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('assets_user/css/style.css') }}" rel="stylesheet">
-    @vite([])
+    <link href="assets_user/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -66,7 +65,22 @@
                     <li><a href="pricing.html">Layanan</a></li>
                     <li><a href="contact.html">Contact</a></li>
 
-                    <li><a class="getstarted" href="about.html">Get Started</a></li>
+                    <li>
+                        @if (Route::has('login'))
+                            <div class="hidden fixed top-0 right-0">
+                                @auth
+                                    <a class="getstarted" href="{{ route('dashboard') }}">Dashboard</a>
+                                @else
+                                    <a class="getstarted" href="{{ route('login') }}">Login
+                                    </a>
+                                    {{-- <a href="">|</a> --}}
+                                    @if (Route::has('register'))
+                                        {{-- <a href="{{ route('register') }}">Register</a> --}}
+                                    @endif
+                                @endauth
+                            </div>
+                        @endif
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -75,7 +89,7 @@
     </header><!-- End Header -->
 
 
-        @yield('content')    
+    @yield('content')
 
     <!-- ======= Footer ======= -->
     <footer id="footer">

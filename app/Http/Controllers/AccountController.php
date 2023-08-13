@@ -54,7 +54,7 @@ class AccountController extends Controller
 
         Accon::create($validatedData);        
 
-        return redirect()->back()->with(['success' => 'deleted successfully']);
+        return redirect()->back()->with(['success' => 'Data successfully']);
             // return redirect()->route('account.index')->with(['success' => 'created successfully']);
         } catch (Exception $e) {
             return redirect()->back()->with(['failed' => 'Ada kesalahan system. error :' . $e->getMessage()]);

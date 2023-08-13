@@ -141,6 +141,12 @@
                                 <div data-i18n="Account Settings">Artikel</div>
                             </a>
                         </li>
+                        <li class="menu-item">
+                            <a href="{{ route('posts.index') }}" class="menu-link">
+                                <i class="menu-icon tf-icons bx bx-user-circle"></i>
+                                <div data-i18n="Account Settings">List Data User</div>
+                            </a>
+                        </li>
                     @endif
                     {{-- @endcan --}}
                     <li class="menu-header small text-uppercase">

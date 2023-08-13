@@ -38,6 +38,7 @@ Route::middleware('auth')->group(function () {
 // perbaikan dari Nas untuk admin
 // dashboard
 Route::middleware(['auth', 'admin'])->group(function () {
+    
     Route::resource('users', adminUserController::class);
     Route::resource('posts', adminDashboardPostController::class);
 });

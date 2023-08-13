@@ -108,22 +108,6 @@
                                     </div>
                                 </div>
 
-                                {{-- <div class="mb-3">
-                                    <label for="body" class="form-label">Persyaratan</label>
-                                    <input id="body" type="hidden" name="body" value="{{ old('body', $data->body ?? '') }}" placeholder="Tentang Anda" required disabled/>
-                                    <textarea id="body" name="body" class="form-control" rows="10" disabled>
-                                Apakah Anda setuju membawa Syarat berikut ke kantor BPN:                                        
-                                - Sertifikat Tanah
-                                - KTP
-                                - Kartu Keluarga
-                                - Surat Pernyataan Tanah dalam sengketa
-                                    </textarea>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Setuju</label>
-                                    </div>
-                                </div> --}}
-
                                 <div class="mb-3">
                                     <label for="body" class="form-label">Tentang Anda</label>
                                     <input id="body" type="hidden" name="body" value="{{ old('body', $data->body ?? '') }}" placeholder="Tentang Anda" required/>

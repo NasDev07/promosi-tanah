@@ -126,8 +126,8 @@
 
                                 <div class="mb-3">
                                     <label for="body" class="form-label">Tentang Anda</label>
-                                    <input id="body" type="hidden" name="body" value="{{ old('body', $data->body ?? '') }}" placeholder="Tentang Anda" required disabled/>
-                                    <trix-editor input="body" disabled>
+                                    <input id="body" type="hidden" name="body" value="{{ old('body', $data->body ?? '') }}" placeholder="Tentang Anda" required/>
+                                    <trix-editor input="body">
                                         <div disabled>Apakah Anda setuju membawa Syarat berikut ke kantor BPN: </div>
                                         <ul>
                                             <li>Sertifikat Tanah</li>

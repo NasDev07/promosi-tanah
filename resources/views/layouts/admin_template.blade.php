@@ -141,15 +141,21 @@
                                 <div data-i18n="Account Settings">Artikel</div>
                             </a>
                         </li>
+                        <li class="menu-item">
+                            <a href="{{ route('posts.index') }}" class="menu-link">
+                                <i class="menu-icon tf-icons bx bx-user-circle"></i>
+                                <div data-i18n="Account Settings">List Data User</div>
+                            </a>
+                        </li>
                     @endif
                     {{-- @endcan --}}
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Pages User</span>
                     </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">
+                    <li class="menu-item @if (isset($datauser)) {{ $datauser }} @endif">
+                        <a href="{{ route('account.index') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-user-circle"></i>
-                            <div data-i18n="Account Settings">Accon</div>
+                            <div data-i18n="Account Settings">Data Diri</div>
                         </a>
                     </li>
                 </ul>

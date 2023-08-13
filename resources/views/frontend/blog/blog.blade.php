@@ -24,7 +24,7 @@
             <div class="row">
 
                 <div class="col-lg-8 entries">
-
+                    @foreach ($post as $item )                                            
                     <article class="entry">
 
                         <div class="entry-img">
@@ -32,8 +32,7 @@
                         </div>
 
                         <h2 class="entry-title">
-                            <a href="{{ url('sigle-blog') }}">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam
-                                quia</a>
+                            <a href="{{ url('sigle-blog') }}">{{  $item->title }}</a>
                         </h2>
 
                         <div class="entry-meta">
@@ -59,7 +58,8 @@
                             </div>
                         </div>
 
-                    </article><!-- End blog entry -->                  
+                    </article><!-- End blog entry --> 
+                    @endforeach                
 
                     <div class="blog-pagination">
                         <ul class="justify-content-center">

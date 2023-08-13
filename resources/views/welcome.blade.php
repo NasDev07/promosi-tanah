@@ -67,11 +67,11 @@
                     <li class="dropdown"><a href="#"><span>Layanan</span> <i
                         class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="{{ url('blog') }}">Artikel</a></li>                            
-                            <li><a href="#">Galeri</a></li>                            
+                            <li><a href="{{ url('blog') }}">Artikel</a></li>
+                            <li><a href="#">Galeri</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="{{ url('contact') }}">Contact</a></li>
 
                     <li>
                         @if (Route::has('login'))
@@ -98,7 +98,7 @@
 
 
     @yield('content')
-    
+
 
     <!-- ======= Footer ======= -->
     <footer id="footer">

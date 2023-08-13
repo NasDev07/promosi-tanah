@@ -15,4 +15,8 @@ class HomeController extends Controller
     public function SigleBlog(){
         return view('frontend.blog.sigle');
     }
+
+    public function contact(){
+        return view('frontend.contact.index');
+    }
 }

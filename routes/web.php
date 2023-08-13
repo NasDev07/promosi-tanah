@@ -19,6 +19,7 @@ Route::get('/', function () {
 // untuk client / User
 Route::get('/blog', [HomeController::class, 'artikel'])->name('blog');
 Route::get('/sigle-blog', [HomeController::class, 'SigleBlog'])->name('sigle-blog');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
 // perbaikan dari Nas untuk user
 // dashboard

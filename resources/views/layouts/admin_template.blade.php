@@ -158,6 +158,12 @@
                             <div data-i18n="Account Settings">Data Diri</div>
                         </a>
                     </li>
+                    <li class="menu-item @if (isset($menuProduk)) {{ $menuProduk }} @endif">
+                        <a href="{{ route('produk.index') }}" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-user-circle"></i>
+                            <div data-i18n="Account Settings">Promosi Tanah</div>
+                        </a>
+                    </li>
                 </ul>
             </aside>
             <!-- / Menu -->

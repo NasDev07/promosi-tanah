@@ -59,6 +59,7 @@
                     </tbody>
                 </table>
             </div>
+            {{ $listdata->withQueryString()->links() }}
         </div>
         <!--/ Basic Bootstrap Table -->
     </div>

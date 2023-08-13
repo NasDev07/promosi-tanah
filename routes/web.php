@@ -10,6 +10,7 @@ use App\Http\Controllers\AccountController as UserAccountController;
 // Admin
 use App\Http\Controllers\UserController as adminUserController;
 use App\Http\Controllers\DashboardPostController as adminDashboardPostController;
+use App\Http\Controllers\ProdukController as adminProdukController;
 
 // untuk client / umum port berita
 Route::get('/', function () {
@@ -42,6 +43,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('ListData', [ProfileController::class, 'ListData'])->name('ListData');
     Route::resource('users', adminUserController::class);
     Route::resource('posts', adminDashboardPostController::class);
+    Route::resource('produk', adminProdukController::class);
 });
 
 require __DIR__ . '/auth.php';

@@ -12,29 +12,31 @@
 
                 @if ($produk->image)
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                        <div class="carousel-indicators">
+                        {{-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
+
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
+                                
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>                            
-                        </div>
+                        </div> --}}
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ asset('storage/' . $produk->image) }}" class="d-block w-80" alt="...">
+                                <img src="{{ asset('storage/' . $produk->image) }}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ asset('storage/' . $produk->image1) }}" class="d-block w-80" alt="...">
+                                <img src="{{ asset('storage/' . $produk->image1) }}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ asset('storage/' . $produk->image2) }}" class="d-block w-80" alt="...">
+                                <img src="{{ asset('storage/' . $produk->image2) }}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ asset('storage/' . $produk->image3) }}" class="d-block w-80" alt="...">
+                                <img src="{{ asset('storage/' . $produk->image3) }}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ asset('storage/' . $produk->image4) }}" class="d-block w-80" alt="...">
+                                <img src="{{ asset('storage/' . $produk->image4) }}" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"

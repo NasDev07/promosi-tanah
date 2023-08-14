@@ -6,62 +6,66 @@
         <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Penjual /</span> Data User</h4>
 
         <!-- Basic Bootstrap Table -->
-        <div class="card">
-            <h5 class="card-header">List Data Penjual</h5>
-            <div class="table-responsive text-nowrap">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Nama</th>
-                            <th>No HP</th>
-                            <th>Profil</th>
-                            <th>Email</th>
-                            <th>Persyaratan</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                        @foreach ($listdata as $data)
-                            <tr>
-                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                    <strong>{{ $data->author->name }}</strong>
-                                </td>
-                                <td>{{ $data->noHp }}
-                                    <span class="badge bg-label-info me-1">
-                                        <a target="_black"
-                                            href="https://wa.me/082288715038?text=Assalamualaikum%20%20atas%20nama%20{{ $data->author->name }}%20meinformasikan%20bahwa%20Tanah%20anda%20ada%20yang%20beli%20silahkan%20persiapkan%20Berkas.%0A%0ATerima%20kasih."><i
-                                                class="bi bi-whatsapp"></i></a>
-                                    </span>
-                                </td>
-                                <td>
-                                    <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
-                                            class="avatar avatar-xs pull-up" title=""
-                                            data-bs-original-title="{{ $data->author->name }}">
-                                            <img src="{{ asset('storage/' . $data->image) }}" alt="Avatar"
-                                                class="rounded-circle">
-                                        </li>
-                                    </ul>
-                                </td>
-                                <td>{{ $data->author->email }}</td>
-                                <td>
-                                    <span class="badge bg-label-success me-1">Setuju</span>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#exLargeModal_{{ $data->id }}">
-                                        Detail
-                                    </button>
-                                </td>
+        <div class="row mt-3">
+            <div class="col-lg-12 mb-4 order-0">
+                <div class="card">
+                    <h5 class="card-header">List Data Penjual</h5>
+                    <div class="table-responsive text-nowrap">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nama</th>
+                                    <th>No HP</th>
+                                    <th>Profil</th>
+                                    <th>Email</th>
+                                    <th>Persyaratan</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-border-bottom-0">
+                                @foreach ($listdata as $data)
+                                    <tr>
+                                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
+                                            <strong>{{ $data->author->name }}</strong>
+                                        </td>
+                                        <td>{{ $data->noHp }}
+                                            <span class="badge bg-label-info me-1">
+                                                <a target="_black"
+                                                    href="https://wa.me/082288715038?text=Assalamualaikum%20%20atas%20nama%20{{ $data->author->name }}%20meinformasikan%20bahwa%20Tanah%20anda%20ada%20yang%20beli%20silahkan%20persiapkan%20Berkas.%0A%0ATerima%20kasih."><i
+                                                        class="bi bi-whatsapp"></i></a>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                                <li data-bs-toggle="tooltip" data-popup="tooltip-custom"
+                                                    data-bs-placement="top" class="avatar avatar-xs pull-up" title=""
+                                                    data-bs-original-title="{{ $data->author->name }}">
+                                                    <img src="{{ asset('storage/' . $data->image) }}" alt="Avatar"
+                                                        class="rounded-circle">
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>{{ $data->author->email }}</td>
+                                        <td>
+                                            <span class="badge bg-label-success me-1">Setuju</span>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#exLargeModal_{{ $data->id }}">
+                                                Detail
+                                            </button>
+                                        </td>
 
-                            </tr>
-                        @endforeach
-                    </tbody>
-                </table>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                    {{ $listdata->withQueryString()->links() }}
+                </div>
+                <!--/ Basic Bootstrap Table -->
             </div>
-            {{ $listdata->withQueryString()->links() }}
         </div>
-        <!--/ Basic Bootstrap Table -->
     </div>
 
 
@@ -119,7 +123,7 @@
                             <div class="col-md-6">
                                 <img src="{{ asset('storage/' . $data->foto_ktp) }}" alt="User KTP"
                                     class="rounded img-fluid">
-                                    <p class="text-primary mt-4">Foto KTP</p>
+                                <p class="text-primary mt-4">Foto KTP</p>
                             </div>
                         </div>
                     </div>

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
 use App\Models\Accon;
+use App\Models\Pesan;
+use App\Models\Produk;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -64,5 +66,12 @@ class ProfileController extends Controller
         $menuListdata = 'active';
         $listdata = Accon::latest()->paginate(10);
         return view('dashboard.list-data-user.datauser', compact('menuListdata', 'listdata'));
-    }
+    }    
+
+    public function pesanTanah(){
+        $menuPesanTanah = 'active';
+        $listdata = Pesan::latest()->paginate(10);
+        $listpenjual = Accon::latest()->paginate(10);
+        return view('dashboard.pesan.pesan-tanah', compact('menuPesanTanah', 'listdata', 'listpenjual'));
+    }    
 }

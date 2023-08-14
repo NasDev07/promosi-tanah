@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Accon;
 use App\Models\Produk;
 use Exception;
 use Illuminate\Http\Request;
@@ -13,14 +14,17 @@ class ProdukController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
+    {        
+        $noHP = Accon::where('user_id', auth()->user()->id)
+        ->orderBy('created_at', 'desc')
+        ->paginate(10);
         $produk = Produk::where('user_id', auth()->user()->id)
             ->orderBy('created_at', 'desc')
             ->paginate(10);
 
         $menuProduk = 'active';
 
-        return view('dashboard.produk.index', compact('menuProduk', 'produk'));
+        return view('dashboard.produk.index', compact('menuProduk', 'produk', 'noHP'));
     }
 
     /**

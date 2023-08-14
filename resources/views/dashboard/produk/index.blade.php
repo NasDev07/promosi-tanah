@@ -5,7 +5,7 @@
         <h4 class="fw-bold py-3 mb-4">
             <span class="text-muted fw-light">Promosi Tanah /</span> List
         </h4>
-        <div class="d-flex justify-content-between">           
+        <div class="d-flex justify-content-between">
         </div>
         <div class="row mt-3">
             <div class="col-lg-12 mb-4 order-0">
@@ -25,7 +25,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Title</th>                                            
+                                            <th scope="col">Title</th>
                                             <th scope="col">Action</th>
                                         </tr>
                                     </thead>
@@ -33,7 +33,7 @@
                                         @foreach ($produk as $post)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $post->title }}</td>                                                
+                                                <td>{{ $post->title }}</td>
                                                 <td>
                                                     <a href="{{ route('produk.show', $post->id) }}" class="badge bg-info"><i
                                                             class="bi bi-eye-fill"></i></a>
@@ -54,6 +54,11 @@
                                         @endforeach
                                     </tbody>
                                 </table>
+                                <span>
+                                    @foreach ($noHP as $hp)
+                                        <p class="mt-3">Nomor Hp: {{ $hp->noHp }}</p>
+                                    @endforeach
+                                </span>
                             </div>
                         </div>
                     </div>

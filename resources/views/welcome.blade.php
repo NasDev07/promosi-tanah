@@ -27,7 +27,7 @@
     <link href="{{ asset('assets_user/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets_user/css/style.css" rel="stylesheet">
+    <link href="{{ asset('assets_user/css/style.css') }}" rel="stylesheet">
     @vite([])
 </head>
 
@@ -63,7 +63,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="services.html">Promosi Tanah Anda</a></li>
+                    <li><a href="{{ url('promosi-tanah') }}">Promosi Tanah Anda</a></li>
                     <li class="dropdown"><a href="#"><span>Layanan</span> <i
                         class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -184,7 +184,7 @@
     <script src="{{ asset('assets_user/vendor/php-email-form/validate.js') }}"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets_user/js/main.js"></script>
+    <script src="{{ asset('assets_user/js/main.js') }}"></script>
 
 </body>
 

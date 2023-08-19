@@ -17,17 +17,18 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
+                                                <th>Tanggal</th>
                                                 <th>Nama</th>
                                                 <th>No HP Pembeli</th>
-                                                <th>No HP Penjual</th>
+                                                <th>Data Penjual Tanah</th>
                                                 <th>Email</th>
-                                                <th>Tanggal</th>
                                                 <th>Pesan</th>
                                             </tr>
                                         </thead>
                                         <tbody class="table-border-bottom-0">
                                             @foreach ($listdata as $data)
                                                 <tr>
+                                                    <td>{{ $data->created_at->format('M j, Y H:i:s') }}</td>
                                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
                                                         <strong>{{ $data->name }}</strong>
                                                     </td>
@@ -40,14 +41,9 @@
                                                         </span>
                                                     </td>
                                                     <td>
-                                                        @foreach ($listpenjual as $item)
-                                                            {{-- @if ($item->id === $data->penjual_id) --}}
-                                                                {{ $item->author->noHp }}
-                                                            {{-- @endif --}}
-                                                        @endforeach
+                                                        <a href="{{ url('promosi-tanah') }}" target="_black">{{ $data->pilihan }}</a>
                                                     </td>
-                                                    <td>{{ $data->email }}</td>
-                                                    <td>{{ $data->created_at->format('M j, Y H:i:s') }}</td>
+                                                    <td>{{ $data->email }}</td>                                                    
                                                     <td>{{ $data->message }}</td>
                                                 </tr>
                                             @endforeach
@@ -65,4 +61,14 @@
         </div>
     </div>
 
+
+    <script>
+        document.getElementById('pilihan').addEventListener('change', function() {
+            const selectedOption = this.options[this.selectedIndex];
+            const sellerId = selectedOption.getAttribute('data-seller');
+            const phoneNumber = '{{ $listpenjual }}'[sellerId - 1].noHp; // Adjust index
+            document.getElementById('nomor_hp').value = phoneNumber;
+        });
+    </script>
+    
 @endsection

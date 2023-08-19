@@ -67,11 +67,14 @@ class ProfileController extends Controller
         $listdata = Accon::latest()->paginate(10);
         return view('dashboard.list-data-user.datauser', compact('menuListdata', 'listdata'));
     }    
+     
 
-    public function pesanTanah(){
+    public function pesanTanah() {
         $menuPesanTanah = 'active';
         $listdata = Pesan::latest()->paginate(10);
-        $listpenjual = Accon::latest()->paginate(10);
-        return view('dashboard.pesan.pesan-tanah', compact('menuPesanTanah', 'listdata', 'listpenjual'));
-    }    
+        $listpenjual = Accon::all();
+        $product = Produk::all();
+        return view('dashboard.pesan.pesan-tanah', compact('menuPesanTanah', 'listdata', 'listpenjual', 'product'));
+    }   
+    
 }

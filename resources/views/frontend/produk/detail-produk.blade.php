@@ -51,7 +51,7 @@
                         </div>
                         {{-- </div> --}}
 
-                        <h2 class="entry-title">
+                        <h2 class="entry-title mt-3">
                             {{ $produkShow->title }}
                         </h2>
 
@@ -82,7 +82,7 @@
                         <h3 class="sidebar-title">Kirem Pesan Untuk Beli Tanah</h3>
                         {{-- @include('frontend.message.index') --}}                        
                         
-                        <a class=" animated-button" href="{{ route('pesan.index') }}">
+                        <a class=" animated-button" href="{{ route('pesan.index', $produkShow->id) }}">
                             <span class="text fw-bold">Kirim Pesan <i class="bi bi-arrow-right"></i></span>
                             <span class="animation"></span>
                         </a>

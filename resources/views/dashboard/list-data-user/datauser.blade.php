@@ -10,6 +10,20 @@
             <div class="col-lg-12 mb-4 order-0">
                 <div class="card">
                     <h5 class="card-header">List Data Penjual</h5>
+                   
+                    {{-- Search --}}
+                    <div class="col-6 col-sm-6 col-md-6">
+                        <form action="" method="GET"
+                            class="d-flex justify-content-center justify-items-center">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" name="keyword"
+                                    placeholder="Cari Nama" aria-label="Keyword">
+                                <button class="input-group-text btn btn-info" id="basic-addon1"><i
+                                        class="bi bi-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
                     <div class="table-responsive text-nowrap">
                         <table class="table">
                             <thead>

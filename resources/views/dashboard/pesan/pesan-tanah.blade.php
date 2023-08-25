@@ -13,6 +13,15 @@
                     <div class="d-flex align-items-end row">
                         <div class="col-sm-12">
                             <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <form action="{{ route('pesanTanah') }}" method="GET">
+                                            <label class="form-label" for="tanggal">Pilih Tanggal:</label>
+                                            <input class="form-control" type="date" name="tanggal" id="tanggal">
+                                            <button class="btn btn-info mt-2" type="submit">Cari</button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <div class="table-responsive text-nowrap">
                                     <table class="table">
                                         <thead>
@@ -41,9 +50,10 @@
                                                         </span>
                                                     </td>
                                                     <td>
-                                                        <a href="{{ url('promosi-tanah') }}" target="_black">{{ $data->pilihan }}</a>
+                                                        <a href="{{ url('promosi-tanah') }}"
+                                                            target="_black">{{ $data->pilihan }}</a>
                                                     </td>
-                                                    <td>{{ $data->email }}</td>                                                    
+                                                    <td>{{ $data->email }}</td>
                                                     <td>{{ $data->message }}</td>
                                                 </tr>
                                             @endforeach
@@ -66,9 +76,9 @@
         document.getElementById('pilihan').addEventListener('change', function() {
             const selectedOption = this.options[this.selectedIndex];
             const sellerId = selectedOption.getAttribute('data-seller');
-            const phoneNumber = '{{ $listpenjual }}'[sellerId - 1].noHp; // Adjust index
+            const phoneNumber = '{{ $listpenjual }}' [sellerId - 1].noHp; // Adjust index
             document.getElementById('nomor_hp').value = phoneNumber;
         });
     </script>
-    
+
 @endsection

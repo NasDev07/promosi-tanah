@@ -62,19 +62,38 @@ class ProfileController extends Controller
     }
 
 
-    public function ListData(){
-        $menuListdata = 'active';
-        $listdata = Accon::latest()->paginate(10);
-        return view('dashboard.list-data-user.datauser', compact('menuListdata', 'listdata'));
-    }    
-     
+    public function ListData(Request $request)
+    {
+        $keyword = $request->input('keyword');
 
-    public function pesanTanah() {
+        $menuListdata = 'active';
+
+        $listdata = Accon::latest()
+            ->join('users', 'accons.user_id', '=', 'users.id')
+            ->where('accons.noHp', 'LIKE', '%' . $keyword . '%')
+            ->orWhere('users.name', 'LIKE', '%' . $keyword . '%')
+            ->select('accons.*') // Pilih kolom dari tabel accons
+            ->paginate(10);
+
+        return view('dashboard.list-data-user.datauser', compact('menuListdata', 'listdata'));
+    }
+
+ 
+
+    public function pesanTanah(Request $request)
+    {
         $menuPesanTanah = 'active';
-        $listdata = Pesan::latest()->paginate(10);
+        $query = Pesan::latest();
+
+        if ($request->has('tanggal')) {
+            $tanggal = $request->tanggal;
+            $query->whereDate('created_at', $tanggal);
+        }
+
+        $listdata = $query->paginate(10);
         $listpenjual = Accon::all();
         $product = Produk::all();
+
         return view('dashboard.pesan.pesan-tanah', compact('menuPesanTanah', 'listdata', 'listpenjual', 'product'));
-    }   
-    
+    }
 }

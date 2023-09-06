@@ -9,11 +9,7 @@
         <div class="breadcrumb-hero">
             <div class="container">
                 <div class="breadcrumb-hero">
-                    <h2>Blog</h2>
-                    <p>
-                        Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas
-                        sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. 
-                    </p>
+                    <h1 class="f-bold mt-4">Berita</h1>
                 </div>
             </div>
         </div>
@@ -71,7 +67,7 @@
                     <div class="sidebar">
 
                         <h3 class="sidebar-title">Search</h3>
-                        {{-- Search --}}                        
+                        {{-- Search --}}
                         <div class="sidebar-item search-form">
                             <form action="" method="GET">
                                 <input type="text" name="keyword" placeholder="Cari...">

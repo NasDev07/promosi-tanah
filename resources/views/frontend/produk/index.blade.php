@@ -7,12 +7,7 @@
         <div class="breadcrumb-hero">
             <div class="container">
                 <div class="breadcrumb-hero">
-                    <h2>Promosi Tanah</h2>
-                    <p>
-                        Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia
-                        voluptas
-                        sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium.
-                    </p>
+                    <h1 class="mt-4">Promosi Tanah Anda</h1>
                 </div>
             </div>
         </div>

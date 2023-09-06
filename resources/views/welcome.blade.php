@@ -38,36 +38,25 @@
         <div class="container d-flex align-items-center justify-content-between">
 
             <div class="logo">
-                <h1 class="text-light"><a href="index.html">Serenity</a></h1>
+                <img src="{{ asset('assets/img/logo/Logo_BPN.png') }}" alt="Logo_BPN" width="115%">
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets_user/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="active" href="index.html">Beranda</a></li>
+                    <li><a class="active" href="{{ url('/') }}">Beranda</a></li>
                     <li class="dropdown"><a href="#"><span>Tentang Kami</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                                        class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="about.html">Visi Misi</a></li>
+                            <li><a href="team.html">Struktur Organisasi</a></li>
+                            <li><a href="team.html">Profil Kepala Kantor</a></li>
                         </ul>
                     </li>
                     <li><a href="{{ url('promosi-tanah') }}">Promosi Tanah Anda</a></li>
-                    <li class="dropdown"><a href="#"><span>Layanan</span> <i
-                        class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="{{ url('blog') }}">Artikel</a></li>
+                            <li><a href="{{ url('blog') }}">Berita</a></li>
                             <li><a href="#">Galeri</a></li>
                         </ul>
                     </li>

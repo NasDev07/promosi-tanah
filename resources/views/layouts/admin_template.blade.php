@@ -157,7 +157,7 @@
                     {{-- @endcan --}}
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Pages User</span>
-                    </li>                    
+                    </li>
                     <li class="menu-item @if (isset($datauser)) {{ $datauser }} @endif">
                         <a href="{{ route('account.index') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-user-circle"></i>
@@ -211,7 +211,7 @@
                                         data-bs-toggle="dropdown">
                                         <div class="avatar avatar-online">
                                             <img src="../assets/img/avatars/1.png" alt="avatar"
-                                                class="w-px-40 h-auto rounded-circle" />                                            
+                                                class="w-px-40 h-auto rounded-circle" />
                                         </div>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end">

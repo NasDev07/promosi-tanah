@@ -55,8 +55,8 @@
                         <div class="app-brand justify-content-center">
                             <a href="{{ url('/')}}" class="app-brand-link gap-2">
                                 <span class="app-brand-logo demo">
-                                    <img src="{{ asset('img/logo-lhokseumawe.png') }}" alt="logo-lhokseumawe" width="150px">                                    
-                                </span>                                
+                                    <img src="{{ asset('assets/img/logo/Logo_BPN.png') }}" alt="Logo_BPN" width="150px">
+                                </span>
                                 {{-- <span class="app-brand-text demo text-body fw-bolder">Padang Sakti</span> --}}
                             </a>
                         </div>
@@ -101,13 +101,13 @@
                                     </a>
                                 @endif
 
-                                <x-primary-button class="ml-3 btn btn-success d-grid w-100">
+                                <x-primary-button class="ml-3 btn btn-success d-grid w-100 mt-3">
                                     {{ __('Log in') }}
                                 </x-primary-button>
                             </div>
                         </form>
 
-                        <p class="text-center">
+                        <p class="text-center pt-2">
                             <span>Baru di platform kami?</span>
                             <a href="{{ route("register") }}">
                                 <span>Buat akun Sekarang</span>

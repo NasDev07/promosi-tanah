@@ -13,7 +13,7 @@
         <meta name="description" content="" />
 
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="img/logo-lhokseumawe.png" />
+        <link rel="icon" type="image/x-icon" href="img/Logo_BPN.png" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,7 +57,7 @@
                             <div class="app-brand justify-content-center">
                                 <a href="/" class="app-brand-link gap-2">
                                     <span class="app-brand-logo demo">
-                                        <img src="{{ asset('img/logo-lhokseumawe.png') }}" alt="logo-lhokseumawe" width="150px">                                    
+                                        <img src="{{ asset('assets/img/logo/Logo_BPN.png') }}" alt="Logo_BPN" width="150px">
                                     </span>
                                     {{-- <span class="app-brand-text demo text-body fw-bolder">Web Desa</span> --}}
                                 </a>
@@ -111,12 +111,12 @@
                                         {{ __('Already have an account?') }}
                                     </a> --}}
 
-                                    <x-primary-button class="btn btn-success d-grid w-100">
+                                    <x-primary-button class="btn btn-success d-grid w-100 mt-5">
                                         {{ __('Register') }}
                                     </x-primary-button>
                                 </div>
                             </form>
-                            <p class="text-center">
+                            <p class="text-center mt-4">
                                 <a href="{{ route("login") }}">
                                     <span>Login Sekarang</span>
                                 </a>

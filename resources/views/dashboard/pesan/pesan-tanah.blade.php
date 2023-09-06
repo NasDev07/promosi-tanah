@@ -18,11 +18,11 @@
                                         <form action="{{ route('pesanTanah') }}" method="GET">
                                             <label class="form-label" for="tanggal">Pilih Tanggal:</label>
                                             <input class="form-control" type="date" name="tanggal" id="tanggal">
-                                            <button class="btn btn-info mt-2" type="submit">Cari</button>
+                                            <button class="btn btn-info mt-4" type="submit">Cari</button>
                                         </form>
                                     </div>
                                 </div>
-                                <div class="table-responsive text-nowrap">
+                                <div class="table-responsive text-nowrap mt-3">
                                     <table class="table">
                                         <thead>
                                             <tr>

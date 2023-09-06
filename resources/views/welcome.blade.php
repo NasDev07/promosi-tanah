@@ -13,6 +13,7 @@
     <link href="{{ asset('assets_user/img/favicon.png') }}" rel="icon">
     <link href="{{ asset('assets_user/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
+
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -102,7 +103,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
+                        <h4>Menu</h4>
                         <ul>
                             <li><a href="#">Beranda</a></li>
                             <li><a href="#">Tentang Kami</a></li>
@@ -118,8 +119,12 @@
                             Komplek Pusat Pemerintahan Aceh Timur, Jl. Medan Banda Aceh, Km. 370, Seuneubok Teungoh PP,
                             Idi Rayeuk, Kode Pos 24442
                             <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            <strong>Phone:</strong> 0646-7020761<br>
+                            <strong>Email:</strong> kantahacehtimur@gmail.com<br>
+                        </p>
+
+                        <p class="mt-4">
+                            <h4>IKUTI KAMI</h4>
                         </p>
 
                         <div class="social-links">
@@ -147,14 +152,14 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>Serenity</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Badan Pertanahan Nasional 2023</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/serenity-bootstrap-corporate-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://bootstrapmade.com/">zahidi</a>
             </div>
         </div>
     </footer><!-- End Footer -->

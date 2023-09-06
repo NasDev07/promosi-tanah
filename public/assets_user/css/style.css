@@ -63,7 +63,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #a6ca63;
+  background: #5340ff;
   color: #fff;
 }
 
@@ -343,7 +343,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #94c045;
+  color: #5340ff;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -416,7 +416,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #94c045;
+  background: #5340ff;
 }
 
 @media (min-width: 1024px) {
@@ -491,7 +491,7 @@ section {
 
 .breadcrumbs .breadcrumb-hero {
   text-align: center;
-  background: #94c045;
+  background: #5340ff;
   padding: 20px 0;
   color: #fff;
 }
@@ -541,7 +541,7 @@ section {
 .about .count-box i {
   display: block;
   font-size: 48px;
-  color: #94c045;
+  color: #5340ff;
   float: left;
   line-height: 0;
 }
@@ -601,7 +601,7 @@ section {
 
 .about .content ul i {
   font-size: 24px;
-  color: #94c045;
+  color: #5340ff;
   position: absolute;
   left: 0;
   top: -2px;
@@ -657,7 +657,7 @@ section {
 }
 
 .about .play-btn:hover::after {
-  border-left: 15px solid #94c045;
+  border-left: 15px solid #5340ff;
   transform: scale(20);
 }
 
@@ -694,7 +694,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #86b03c;
+  background: #5340ff;
   padding: 50px 0;
 }
 
@@ -723,8 +723,8 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #aacd6b;
-  border-color: #aacd6b;
+  background: #5340ff;
+  border-color: #5340ff;
 }
 
 /*--------------------------------------------------------------
@@ -769,7 +769,7 @@ section {
 }
 
 .services .icon-box:hover .title a {
-  color: #94c045;
+  color: #5340ff;
 }
 
 .services .description {
@@ -803,7 +803,7 @@ section {
 .work-process .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #94c045;
+  color: #5340ff;
 }
 
 .work-process .content p:last-child {
@@ -836,7 +836,7 @@ section {
 .skills .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #94c045;
+  color: #5340ff;
 }
 
 .skills .content p:last-child {
@@ -873,7 +873,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #94c045;
+  background-color: #5340ff;
 }
 
 /*--------------------------------------------------------------
@@ -961,11 +961,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #94c045;
+  border: 1px solid #5340ff;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #94c045;
+  background-color: #5340ff;
 }
 
 @media (min-width: 992px) {
@@ -1000,11 +1000,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #94c045;
+  border: 1px solid #5340ff;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #94c045;
+  background-color: #5340ff;
 }
 
 /*--------------------------------------------------------------
@@ -1057,7 +1057,7 @@ section {
 }
 
 .features .card:hover .card-body {
-  background: #94c045;
+  background: #5340ff;
 }
 
 .features .card:hover .read-more a,
@@ -1098,7 +1098,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #94c045;
+  background: #5340ff;
 }
 
 .portfolio #portfolio-flters li:last-child {

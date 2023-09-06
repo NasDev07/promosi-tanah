@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Posts;
+use App\Models\Struktur;
+use App\Models\VisiMisi;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -27,11 +29,16 @@ class HomeController extends Controller
         $postSlider = Posts::latest()
         ->paginate(8);
         return view('frontend.blog.sigle', compact('postShow', 'postSlider'));
+    }       
+
+    public function visimisi() {
+        $visimisi = VisiMisi::all();
+        return view('frontend.visi-misi.visi-misi', compact('visimisi'));
     }
 
-    public function contact()
-    {
-        return view('frontend.contact.index');
-    }    
+    public function StrukturOrganisasi() { 
+        $struktur = Struktur::all();
+        return view('frontend.struktur.struktur', compact('struktur'));
+    }
     
 }

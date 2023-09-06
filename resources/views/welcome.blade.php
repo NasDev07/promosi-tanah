@@ -50,18 +50,13 @@
                     <li class="dropdown"><a href="#"><span>Tentang Kami</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="about.html">Visi Misi</a></li>
-                            <li><a href="team.html">Struktur Organisasi</a></li>
+                            <li><a href="{{ url('visimisi') }}">Visi Misi</a></li>
+                            <li><a href="{{ url('struktur-organisasi') }}">Struktur Organisasi</a></li>
                             <li><a href="team.html">Profil Kepala Kantor</a></li>
                         </ul>
                     </li>
                     <li><a href="{{ url('promosi-tanah') }}">Promosi Tanah Anda</a></li>
-                        <ul>
-                            <li><a href="{{ url('blog') }}">Berita</a></li>
-                            <li><a href="#">Galeri</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{{ url('contact') }}">Contact</a></li>
+                    <li><a href="{{ url('blog') }}">Berita</a></li>
 
                     <li>
                         @if (Route::has('login'))
@@ -138,12 +133,9 @@
 
                     <div class="col-lg-3 col-md-6 footer-newsletter">
                         <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam
-                            illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase
-                            seza.</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
+                        <iframe style="border:0; width: 100%; height: 170px;"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                            frameborder="0" allowfullscreen></iframe>
                     </div>
 
                 </div>

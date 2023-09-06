@@ -16,14 +16,14 @@
                 ">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('assets/img/profil/slide1.jpeg') }}" alt="..." class="d-block w-100" 
-                style="
+                <img src="{{ asset('assets/img/profil/slide1.jpeg') }}" alt="..." class="d-block w-100"
+                    style="
                     width: 200px;
                     height: 500px;
                     object-fit: cover;
                     object-position: 20% 10%;                    
                 ">
-            </div>            
+            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -33,7 +33,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div>    
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -44,10 +44,13 @@
                     {{-- Selamat Datang --}}
                     <marquee onmouseover="this.stop()" onmouseout="this.start()">
                         <div class="teks_berjalan">
-                            <span class="fw-medium mt-3">Selamat Datang di Website Sistem Informasi Desa Padang Sakti Kecamatan Muara Satu
-                                Kabupaten Kota Lhokseumawe Membangun Web Desa Bertujuan Sebagai Wadah Bagian Dari Sistem Informasi Desa
-                                Yang Berfungsi Sebagai Portal Informasi Dan Transparansi | Kantor Desa Padang Sakti membuka pelayanan
-                                publik pada hari Senin - Jumat pukul  08.00 - 16:00 WIB
+                            <span class="fw-medium mt-3">Selamat Datang di Website Sistem Informasi Desa Padang Sakti
+                                Kecamatan Muara Satu
+                                Kabupaten Kota Lhokseumawe Membangun Web Desa Bertujuan Sebagai Wadah Bagian Dari Sistem
+                                Informasi Desa
+                                Yang Berfungsi Sebagai Portal Informasi Dan Transparansi | Kantor Desa Padang Sakti membuka
+                                pelayanan
+                                publik pada hari Senin - Jumat pukul 08.00 - 16:00 WIB
                             </span>
                         </div>
                     </marquee>
@@ -75,13 +78,13 @@
                                 <span>08:00 - 16:00</span>
                                 <p>Jam Kerja</p>
                             </div>
-                        </div>                        
+                        </div>
 
                     </div>
                 </div>
-            </div>        
+            </div>
         </div>
-    </section><!-- End About Section -->        
+    </section><!-- End About Section -->
 
 
 @endsection

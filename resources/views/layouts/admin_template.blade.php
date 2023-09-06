@@ -148,11 +148,23 @@
                             </a>
                         </li>
                         <li class="menu-item @if (isset($menuPesanTanah)) {{ $menuPesanTanah }} @endif">
-                        <a href="{{ url('pesanTanah') }}" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-user-circle"></i>
-                            <div data-i18n="Account Settings">Pesan Tanah</div>
-                        </a>
-                    </li>
+                            <a href="{{ url('pesanTanah') }}" class="menu-link">
+                                <i class="menu-icon tf-icons bx bx-user-circle"></i>
+                                <div data-i18n="Account Settings">Pesan Tanah</div>
+                            </a>
+                        </li>
+                        <li class="menu-item @if (isset($menuVisiMisi)) {{ $menuVisiMisi }} @endif">
+                            <a href="{{ url('visi-misi') }}" class="menu-link">
+                                <i class="menu-icon tf-icons bx bx-user-circle"></i>
+                                <div data-i18n="Account Settings">Visi & Misi</div>
+                            </a>
+                        </li>
+                        <li class="menu-item @if (isset($menuStruktur)) {{ $menuStruktur }} @endif">
+                            <a href="{{ url('struktur') }}" class="menu-link">
+                                <i class="menu-icon tf-icons bx bx-user-circle"></i>
+                                <div data-i18n="Account Settings">Struktur Organisasi</div>
+                            </a>
+                        </li>
                     @endif
                     {{-- @endcan --}}
                     <li class="menu-header small text-uppercase">

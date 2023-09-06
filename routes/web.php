@@ -12,7 +12,9 @@ use App\Http\Controllers\UserController as adminUserController;
 use App\Http\Controllers\DashboardPostController as adminDashboardPostController;
 use App\Http\Controllers\PesanController;
 use App\Http\Controllers\ProdukController as adminProdukController;
+use App\Http\Controllers\StrukturController as adminStrukturController;
 use App\Http\Controllers\UserProdukController;
+use App\Http\Controllers\VisiMisiController as adminVisiMisiController;
 
 // untuk client / umum port berita
 Route::get('/', function () {
@@ -22,10 +24,11 @@ Route::get('/', function () {
 // untuk client / User
 Route::get('/blog', [HomeController::class, 'artikel'])->name('blog');
 Route::get('sigle-blog/{title}/show', [HomeController::class, 'show'])->name('sigle-blog.show');
-Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/promosi-tanah', [UserProdukController::class, 'promosi'])->name('promosi-tanah');
 Route::get('promosi-tanah/{title}/show', [UserProdukController::class, 'show'])->name('promosi-tanah.show');
 Route::resource('pesan', PesanController::class);
+Route::get('/visimisi', [HomeController::class, 'visimisi'])->name('visi-misi');
+Route::get('/struktur-organisasi', [HomeController::class, 'StrukturOrganisasi'])->name('struktur-organisasi');
 
 // perbaikan dari Nas untuk user dan admin
 // dashboard
@@ -50,6 +53,8 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('pesanTanah', [ProfileController::class, 'pesanTanah'])->name('pesanTanah');
     Route::resource('users', adminUserController::class);
     Route::resource('posts', adminDashboardPostController::class);    
+    Route::resource('visi-misi', adminVisiMisiController::class);    
+    Route::resource('struktur', adminStrukturController::class);    
 });
 
 require __DIR__ . '/auth.php';

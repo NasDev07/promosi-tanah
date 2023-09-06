@@ -29,6 +29,7 @@ Route::get('promosi-tanah/{title}/show', [UserProdukController::class, 'show'])-
 Route::resource('pesan', PesanController::class);
 Route::get('/visimisi', [HomeController::class, 'visimisi'])->name('visi-misi');
 Route::get('/struktur-organisasi', [HomeController::class, 'StrukturOrganisasi'])->name('struktur-organisasi');
+Route::get('/profile-kepala', [HomeController::class, 'ProfileKepala'])->name('profile-kepala');
 
 // perbaikan dari Nas untuk user dan admin
 // dashboard

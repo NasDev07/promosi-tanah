@@ -52,7 +52,7 @@
                         <ul>
                             <li><a href="{{ url('visimisi') }}">Visi Misi</a></li>
                             <li><a href="{{ url('struktur-organisasi') }}">Struktur Organisasi</a></li>
-                            <li><a href="team.html">Profil Kepala Kantor</a></li>
+                            <li><a href="{{ url('profile-kepala') }}">Profil Kepala Kantor</a></li>
                         </ul>
                     </li>
                     <li><a href="{{ url('promosi-tanah') }}">Promosi Tanah Anda</a></li>

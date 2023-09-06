@@ -40,5 +40,9 @@ class HomeController extends Controller
         $struktur = Struktur::all();
         return view('frontend.struktur.struktur', compact('struktur'));
     }
+
+    public function ProfileKepala(){
+        return view('frontend.profil-kepala.profile-kepala');
+    }
     
 }

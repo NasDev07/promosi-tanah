@@ -19,18 +19,18 @@
         <div class="container">
 
             <div class="row">
-
+                @foreach ($kepala as $kepala)
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="member aos-init aos-animate" data-aos="fade-up">
                         <div class="member-img">
-                            <img src="assets_user/img/team/team-1.jpg" class="img-fluid rounded" alt="">                            
+                            <img src="{{ 'storage/' . $kepala->image }}" class="img-fluid rounded" alt="">                            
                         </div>
                         <div class="member-info">
-                            <h4>Walter White</h4>                            
+                            <h4>{{ $kepala->title }}</h4>                            
                         </div>
                     </div>
-                </div>
-
+                </div>                
+                @endforeach
             </div>
 
         </div>

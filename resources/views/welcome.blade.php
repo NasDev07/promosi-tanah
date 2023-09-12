@@ -38,10 +38,9 @@
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <div class="logo">
-                <img src="{{ asset('assets/img/logo/Logo_BPN.png') }}" alt="Logo_BPN" width="115%">
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html"><img src="assets_user/img/logo.png" alt="" class="img-fluid"></a>-->
+            <div class="logo d-flex justify-content-between">
+                <img src="{{ asset('assets/img/logo/Logo_BPN.png') }}" alt="Logo_BPN" class="mr-3 mx-3">
+                <a href="{{ ('/') }}" class="my-2 ml-3 text-dark fw-bold">Kantor Pertanahan Aceh Timur</a>
             </div>
 
             <nav id="navbar" class="navbar">
@@ -119,7 +118,7 @@
                         </p>
 
                         <p class="mt-4">
-                            <h4>IKUTI KAMI</h4>
+                        <h4>IKUTI KAMI</h4>
                         </p>
 
                         <div class="social-links">
